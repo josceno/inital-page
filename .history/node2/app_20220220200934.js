@@ -44,7 +44,7 @@ const server = http.createServer((req,res)=>{
     }
   
 })
-console.log('nodemon works well')
+console.log('works well')
 server.listen(5081)
 /*app.use('style.css', express.static('C:/Users/user/Downloads/inventione desafio/style.css'))
 app.get("/",async(req,res)=>{    
