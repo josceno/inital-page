@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    
+    <link data-require="bootstrap@3.3.7" data-semver="3.3.7" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script data-require="jquery@*" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script data-require="bootstrap@3.3.7" data-semver="3.3.7" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script.js">defer</script>
+    <script data-require="angular.js@1.6.2" data-semver="1.6.2" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      const indexjs = __dirname
+      module.exports = {indexjs}
+    </script>
+    <meta charset="UTF-8">
+    
+  </head>
+  
+
+  <body>
+    
+   
+    <div class="content-wrap">
+     
+      <article>
+        
+      <header>
+        <h2 style="font-size:3vw;">page test</h2>
+        <h1 style="font-size:3vw;"> Home Page</h1>
+        
+      </header>
+      <div id= "form">
+      <form action="action._page.php">
+        
+        
+       <!-- entradas para Nome, Idade, a Data e o Genero-->
+        <div class = "Nome">
+        <label for="">Nome:</label>       
+        <input class="Nomu"  aria-required="true" id="Nome" name="Nome" placeholder="username" type="text" size="30" max len/>
+          
+        </div>
+        
+        <div class = "idade">
+        <label class=age for="">Idade:</label>
+          <input class=Idade id="idade" idade="idade"  placeholder="idade" type="number" size="20"  onkeypress="return event.charCode >= 48" min="1" >
+        </div>
+        
+        <div class="Data">
+          <label for="">Data:</label> 
+            <input class=data name="data" type="date" value=2021-12-27 required id="Data"  min=2021-12-27 required></input>
+            
+           
+          </div>
+          <p class= genderlabel> Sexo:</p>
+          <div class="sexo">
+            
+            <div class="genradio">
+              <input type= radio name=genderi value=Feminino>   feminino<br>
+              <input type= radio name=genderi value=masculino> masculino<br>
+              
+            </div>
+          </div> 
+          <!-- O botão apresentar--> 
+          
+            <button id=btn class=btnpresent onclick="clicar(); return false;" style="display:none;">Apresentar</button>  
+
+          </div>
+         
+
+          </div>
+         
+          
+
+        
+        <div class="checkbottom">
+          <div class= check>
+            <input  name=checkbox id=check1 type=checkbox value=" " onclick="aparescercampo()"/>
+          <label for="">Habilitar Segundo Painel</label>
+        </div>
+       </div>
+        
+        <textarea   class=txt id="txt" name="txt" placeholder="Aqui vai os datados registrados acima, a primeira linha são os dados e a segunda é o numero de palavras" type="text" size="30" readonly maxlength=10000 style="display:none;"></textarea>
+        <p class=titlex2 id=txt2title style="display:none;">texto Livre:</p>
+        <textarea   class=txt2 id="txt2" name="txt2" placeholder="insira aqui um texto ele será contado e exibido no segundo painel" type="text" size="30"  maxlength=10000 style="display:none;"></textarea>
+      
+      </form>
+    </div>
+
+     </div>
+     
+
+
+    
+      </style>
+      <!--
+        
+        Sua estrutura html aqui
+        
+      -->
+    </article>
+    </div>
+    <div class="dataAcss">
+      <a href="/store">
+        <input type ='submit' value="Dados armazenados">
+      </a>
+    
+    <script src="script.js"></script>
+  </body>
+
+</html>

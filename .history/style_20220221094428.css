@@ -1,0 +1,190 @@
+/* Suas estilizações */
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 100%;
+  max-width: 130.3px;
+  margin: 20 auto;
+  height: 700px;
+  background-color:rgb(13, 211, 211);
+}
+
+.content-wrap {
+  
+  margin: auto;
+}
+
+.content-wrap h1 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+}
+.content-wrap h2 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+}
+header{
+  width:100vw;
+  background-color: #1900fc;
+  padding: 1px 0;
+}
+
+
+
+.Nome{
+  
+  width:80px;
+  font-family: Óptima, sans-serif; 
+  height: 40px;
+  display:flex;
+  padding: 20px 0;
+  transform: translate(0,90%);
+  position: relative;
+  left:17vw;
+}
+.Nomu{
+  
+  height: 30px;
+  transform: translate(5%,0%);
+  border-width: 0.01cm;
+  border-radius: 0.5rem;
+}
+
+.idade{
+  width:80px;
+  display:flex;
+  padding: 20px 0;
+  transform: translate(0,90%);
+  position: relative;
+  left:17vw;
+  font-family: Óptima, sans-serif; 
+  
+}
+.Idade{
+  transform: translate(5%,0%);
+  border-width: 0.01cm;
+  border-radius: 0.5rem;
+  height: 30px;
+}
+.Data{
+  height: 60px;
+  width:300px;
+  display:flex;
+  padding: 20px 0;
+  margin-bottom: 10px;
+  position: relative;
+  transform: translate(0%,-123%);
+  top:30%;
+  left: 64vw;
+  font-family: Óptima, sans-serif; 
+}
+.data{
+  height: 30px;
+  transform: translate(5%,0%);
+  border-radius: 0.5rem;
+  border-width: 0.01cm;
+}
+.sexo{
+  width: 200px;
+  font-family: Óptima, sans-serif; 
+  border-style: solid;
+  border-width: 0.01cm;
+  border-color: rgb(121, 118, 118);
+  border-radius: 0.5rem;
+  margin-left: 10%;
+  transform: translate(0,0%);
+  position: relative;
+  left:17vw;
+  background-color:rgb(255, 255, 255) ;
+}
+.genradio{
+  position: relative;
+  left: 1vw
+}
+.genderlabel{
+  font-family: Óptima, sans-serif; 
+  font-weight: 600;
+  position: relative;
+  left:19vw;
+}
+
+
+.check{
+  width:300px; 
+  padding: 20px 0; 
+  transform: translate(17vw,2vw); 
+  margin-bottom: 10px;
+  position: relative;
+  left:1vw;
+  
+}
+.txt2{
+  height: 130px;
+  width:260px;
+  display:flex;
+  padding: 20px 0;
+  margin-bottom: 10px;
+  position: relative;
+  transform: translate(0%,-305%);
+  top:60%;
+  left: 64vw;
+  font-family: Óptima, sans-serif; 
+  border-radius: 0.5rem;
+}
+.txt{
+  color: #000000;
+  font-style: italic;
+  font-family: Óptima, sans-serif; 
+  font-weight: bold;
+  font-size: 15px;
+  padding: 20px 0; 
+  position: relative;
+  left:18vw;
+  border-radius: 0.5rem;
+  height: 170px;
+  width:800px; 
+  background-color:rgba(189, 185, 185, 0.685) ;
+  
+}
+.titlex2{
+  font-family: Óptima, sans-serif; 
+  display:flex;
+  padding: 20px 0;
+  margin-bottom: 10px;
+  position: relative;
+  transform: translate(10%,-630%);
+  top:60%;
+  left: 64vw;
+
+}
+  
+
+
+.btnpresent{
+  
+  transform: translate(0%,900%);
+  left:1000px;
+  padding: 5px 0;
+  background: #016ABC;
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 5px #eee;
+  text-shadow:none;
+  width: 80px;
+  position: relative;
+  
+}
+.btnpresent:hover{
+  background: rgba(0, 0, 0, 0);
+  color: #016ABC;
+  box-shadow:insert 0 0 0 3px  #016ABC;
+}
+.word{
+  transform: translate(60%,-115%); 
+}
