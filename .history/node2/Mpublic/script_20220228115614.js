@@ -165,73 +165,13 @@ if(outrodia == NaN|| outrodia == "[object HTMLTextAreaElement]"){
       
       let gender4= document.getElementById("txt2")
       let txt4 = "";
-     
   
       txt4 = txt4+ gender4.value + "";
       document.getElementById("txt").value = "---nome: "+  txt +"\n"+"idade: "+ txt1 +"\n"+" data de registro: " + txt2 +"\n"+" Genero: " + txt3 +"\n"+ txt4
       
       let self = document.getElementById("txt2")
         self.value = " "+self.value+ " ";
-        
-
-        alfa =['a','e','i','o','u','y']
-        beto = ['b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','z']
-        var quoti = self.value
-      //console.log(quoti.normalize('NFD').replace(/[\u0300-\u036f]/g,""))
-      console.log(quoti.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,""))
-
-      let quote = quoti.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,"")
- 
-      var vogal = 0
-      var consonant = 0 
-
-      var count = []
-      var wordo =[]
-      var word = quote.split(/\W+/)
-    //console.log(word)
-      
-    //wordo.push(word[0]) 
-    for (var A = 0; A< word.length; A++){
-        //console.log(word[A])
-    
-    wordo = []
-    //console.log(wordo)
-    for (i = 0; i < word[A].length; i++){
-        //console.log(word[A].charAt(i))
-        wordo.push(word[A].charAt(i))
-        
-    }
-    //console.log(wordo)
-    for (var j =0; j <wordo.length; j++)
-    {
-        //console.log(wordo[j],alfa.indexOf(wordo[j]))
-        if(alfa.indexOf(wordo[j])>=0)
-        {
-            vogal =1 
-            //console.log(alfa.indexOf(wordo[j]), `vogalnum: ${vogal}`, `vogal: ${wordo[j]}` ) 
-        }
-        if(beto.indexOf(wordo[j])>=0)
-        {
-            consonant =1 
-            //console.log(beto.indexOf(wordo[j]), `consonat: ${consonant}`,`consonat: ${wordo[j]}`)          
-        }      
-    }
-    if(consonant + vogal == 2)
-    {
-        count.push(word[A])
-        //console.log(count)
-        vogal = 0
-        consonant = 0
-    }else{
-        vogal = 0
-        consonant = 0
-    }   
-
-console.log(count)
-console.log(`numero de palavras ${count.length}`)
-//if(alfa.indexOf(wordo))
-
-       /* var dito = self.value.match(/ a(?=ao |ai |au |ae |aO |aI |aU |aE )\S+/g);
+        var dito = self.value.match(/ a(?=ao |ai |au |ae |aO |aI |aU |aE )\S+/g);
         var ditO = self.value.match(/ A(?=Ao |Ai |Au |Ae |AO |AI |AU |AE )\S+/g);
         var dite = self.value.match(/ e(?=eo |ei |eu |ea )\S+/g);
         var ditE = self.value.match(/ E(?=Eo |Ei |Eu |Ea |EO |EI |EU |EA )\S+/g);
@@ -284,8 +224,8 @@ console.log(`numero de palavras ${count.length}`)
         if(txt2 == " "){
           alert("data invalida")
         }
-        */
-        document.getElementById("txt").value = "---nome: "+  txt +"\n"+"---idade: "+ txt1 +"\n"+ "---data: " + txt2 +"\n"+ "---Genero: " + txt3   +"\n"+"-----------------------------------"+"\n"+"    "+ txt4 +"\n"+"-----------------------------------"+"\n"+ "---numero de palavras é: " + count.length;
+        
+        document.getElementById("txt").value = "---nome: "+  txt +"\n"+"---idade: "+ txt1 +"\n"+ "---data: " + txt2 +"\n"+ "---Genero: " + txt3   +"\n"+"-----------------------------------"+"\n"+"    "+ txt4 +"\n"+"-----------------------------------"+"\n"+ "---numero de palavras é: " + finalwarudo;
 
 
 } 
@@ -317,4 +257,4 @@ console.log(`numero de palavras ${count.length}`)
 
 
   
-}
+

@@ -172,7 +172,7 @@ if(outrodia == NaN|| outrodia == "[object HTMLTextAreaElement]"){
       
       let self = document.getElementById("txt2")
         self.value = " "+self.value+ " ";
-        
+        console.log(self.value)
 
         alfa =['a','e','i','o','u','y']
         beto = ['b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','z']
@@ -285,7 +285,7 @@ console.log(`numero de palavras ${count.length}`)
           alert("data invalida")
         }
         */
-        document.getElementById("txt").value = "---nome: "+  txt +"\n"+"---idade: "+ txt1 +"\n"+ "---data: " + txt2 +"\n"+ "---Genero: " + txt3   +"\n"+"-----------------------------------"+"\n"+"    "+ txt4 +"\n"+"-----------------------------------"+"\n"+ "---numero de palavras é: " + count.length;
+        document.getElementById("txt").value = "---nome: "+  txt +"\n"+"---idade: "+ txt1 +"\n"+ "---data: " + txt2 +"\n"+ "---Genero: " + txt3   +"\n"+"-----------------------------------"+"\n"+"    "+ txt4 +"\n"+"-----------------------------------"+"\n"+ "---numero de palavras é: " + finalwarudo;
 
 
 } 
@@ -317,4 +317,4 @@ console.log(`numero de palavras ${count.length}`)
 
 
   
-}
+

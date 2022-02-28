@@ -33,6 +33,7 @@ function isavord(){
         {
             vogal =1 
             //console.log(alfa.indexOf(wordo[j]), `vogalnum: ${vogal}`, `vogal: ${wordo[j]}` ) 
+
         }
         if(beto.indexOf(wordo[j])>=0)
         {
@@ -53,7 +54,8 @@ function isavord(){
 }
 console.log(count)
 console.log(`numero de palavras ${count.length}`)
-//if(alfa.indexOf(wordo))
+    //if(alfa.indexOf(wordo))
+    
 }
 isavord()
 

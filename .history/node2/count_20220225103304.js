@@ -53,7 +53,8 @@ function isavord(){
 }
 console.log(count)
 console.log(`numero de palavras ${count.length}`)
-//if(alfa.indexOf(wordo))
+    //if(alfa.indexOf(wordo))
+    
 }
 isavord()
 
