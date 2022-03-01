@@ -71,7 +71,7 @@ function clicar()
       document.getElementById("txt").value = "nome: "+  txt +"\n"+" idade: "+ txt1 
       
       
-    let hollowvalue = ' '
+    let hollowvalue = 0
     console.log(`hollow value: ${hollowvalue}`)
     
       let gender2 = document.getElementById("Data")
@@ -141,15 +141,7 @@ if(outrodia == NaN|| outrodia == "[object HTMLTextAreaElement]"){
         txt2 = " "
         }  
       }
-      if(hollowvalue == ' '){                                                  
-      console.log('vazio')
-        document.getElementById("txt").value = "nome: "+  txt +"\n"+" idade: "+ txt1 +"\n"+ " data de registro " + hollowvalue
-        txt2 = hollowvalue
-      }else{
-        document.getElementById("txt").value = "nome: "+  txt +"\n"+" idade: "+ txt1 +"\n"+ " data de registro " + hollowvalue
-        text2 = hollowvalue
-    }
-
+      document.getElementById("txt").value = "nome: "+  txt +"\n"+" idade: "+ txt1 +"\n"+ " data de registro " + txt2
       
       
       let genderi = document.forms[0];
