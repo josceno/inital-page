@@ -1,10 +1,11 @@
-function datasend(){
 const express = require('express')
 const app = express()
 const {products} = require('./data.js')
 
 
-
+app.get('/', (req,res)=>{
+    res.send('<h1>data page?</h1><a href="/api/data">products</a> ')
+})
 //define database url
 app.get('/api/data',(req,res)=>{
     const newProducts = products.map((product)=>{
@@ -32,27 +33,10 @@ app.get('/api/data/:id/filter/:filterkey',(req,res)=>{
 })
 app.get('/api/v1/query',(req,res)=>{
     console.log(req.query)
-    const {search,limit} = req.query
+    const {search,limit}
     let sortedProducts = [...products]
-    if(search){
-        sortedProducts = sortedProducts.filter((product)=>{
-            return product.name.startsWith(search)
-        })
-    }
-    if(limit){
-        sortedProducts = sortedProducts.slice(0,Number(limit))
-    }
-    if(sortedProducts.length<1)
-    {
-        //res.status(200).send('no data matcher your search')
-        return res.status(200).json({sucess: true, data:[]})
-
-    }
-    res.status(200).json(sortedProducts)
-    
+    res.send('<p>Hello word</p>')
 })
 app.listen(5000, () =>{
     console.log('Server is listen on 5000')
 })
-}
-datasend()

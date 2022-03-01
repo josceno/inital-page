@@ -1,4 +1,3 @@
-function datasend(){
 const express = require('express')
 const app = express()
 const {products} = require('./data.js')
@@ -54,5 +53,3 @@ app.get('/api/v1/query',(req,res)=>{
 app.listen(5000, () =>{
     console.log('Server is listen on 5000')
 })
-}
-datasend()

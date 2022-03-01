@@ -1,10 +1,11 @@
-function datasend(){
 const express = require('express')
 const app = express()
 const {products} = require('./data.js')
 
 
-
+app.get('/', (req,res)=>{
+    res.send('<h1>data page?</h1><a href="/api/data">products</a> ')
+})
 //define database url
 app.get('/api/data',(req,res)=>{
     const newProducts = products.map((product)=>{
@@ -45,7 +46,7 @@ app.get('/api/v1/query',(req,res)=>{
     if(sortedProducts.length<1)
     {
         //res.status(200).send('no data matcher your search')
-        return res.status(200).json({sucess: true, data:[]})
+        return res.status(200).json()
 
     }
     res.status(200).json(sortedProducts)
@@ -54,5 +55,3 @@ app.get('/api/v1/query',(req,res)=>{
 app.listen(5000, () =>{
     console.log('Server is listen on 5000')
 })
-}
-datasend()
