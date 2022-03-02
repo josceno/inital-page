@@ -1,4 +1,4 @@
-
+const datasend = function(){
 const express = require('express')
 const app = express()
 const {products} = require('./data.js')
@@ -52,7 +52,8 @@ app.get('/api/v1/query',(req,res)=>{
     res.status(200).json(sortedProducts)
     
 })
-app.listen(5000, () =>{
+/*app.listen(5000, () =>{
     console.log('Server is listen on 5000')
-})
-
+})*/
+}
+module.exports = app

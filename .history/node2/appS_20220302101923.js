@@ -1,9 +1,9 @@
 
 const express = require('express')
 const app = express()
-const {products} = require('./data.js')
+const products = require('./data.json')
 
-
+app.use(express.json())
 console.log('appS imported suceffully')
 //define database url
 const f = app.get('/api/data',(req,res)=>{
@@ -52,7 +52,7 @@ app.get('/api/v1/query',(req,res)=>{
     res.status(200).json(sortedProducts)
     
 })
-app.listen(5000, () =>{
+/*app.listen(5000, () =>{
     console.log('Server is listen on 5000')
-})
+})*/
 

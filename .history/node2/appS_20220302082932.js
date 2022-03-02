@@ -1,18 +1,17 @@
-
+function datasend(){
 const express = require('express')
 const app = express()
 const {products} = require('./data.js')
 
 
-console.log('appS imported suceffully')
+
 //define database url
-const f = app.get('/api/data',(req,res)=>{
+app.get('/api/data',(req,res)=>{
     const newProducts = products.map((product)=>{
         const {id, name, image} = product;
         return {id,name,image}
     })
     res.json(newProducts)
-    console.log('appS imported suceffully1')
 })
 //search by id
 app.get('/api/data/:id',(req,res)=>{
@@ -52,7 +51,8 @@ app.get('/api/v1/query',(req,res)=>{
     res.status(200).json(sortedProducts)
     
 })
-app.listen(5000, () =>{
+/*app.listen(5000, () =>{
     console.log('Server is listen on 5000')
-})
-
+})*/
+}
+module.exports= datasend
