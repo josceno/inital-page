@@ -1,7 +1,8 @@
 
 const express = require('express')
 const app = express()
-const {products} = require('./data.js')
+const products = require('./data.json')
+
 
 
 console.log('appS imported suceffully')
