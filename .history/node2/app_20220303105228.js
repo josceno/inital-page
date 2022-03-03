@@ -1,30 +1,5 @@
 const express = require('express')
 const app = express()
-const fs = require('fs')
-const path = require('path')
-
-
-var a = __dirname
-var b = ('\\index.html')
-
-var splito = a.split('\\')
-var dir = splito.reverse().slice(-5).reverse().join('\\')
-
-app.use(express.static('Mpublic'))
-
-app.get('/',(req,res)=>{
-    res.sendFile(path.resolve(__dirname, dir+b))
-    console.log('reached')
-})
-app.use(express.static('./public'))
-////////
-app.get('/store',(req,res)=>{
-    res.sendFile(path.resolve(__dirname,'./index2.html'))
-    console.log('1 layer')
-})
-//////////
-
-//
 const product = require('./data.json')
 
 app.use(express.json())
@@ -55,7 +30,7 @@ app.get('/api/query',(req,res)=>{
     let sortedProducts = [...product]
     if(search){
         sortedProducts = sortedProducts.filter((products)=>{
-            return products.name.startsWith(search)
+            return product.name.startsWith(search)
         })
     }
     if(limit){

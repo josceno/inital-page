@@ -16,7 +16,7 @@ app.get('/',(req,res)=>{
     res.sendFile(path.resolve(__dirname, dir+b))
     console.log('reached')
 })
-app.use(express.static('./public'))
+//app.use(express.static('./public'))
 ////////
 app.get('/store',(req,res)=>{
     res.sendFile(path.resolve(__dirname,'./index2.html'))
@@ -28,7 +28,7 @@ app.get('/store',(req,res)=>{
 const product = require('./data.json')
 
 app.use(express.json())
-
+app.use(express.static('./public'))
 
 app.get('/api/data',(req,res)=>{
     //res.json(product)
