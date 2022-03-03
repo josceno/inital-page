@@ -1,9 +1,5 @@
 ---
-name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
-assignees: ''
+name: required input issue 
 
 ---
 
@@ -12,27 +8,15 @@ the program is not warning user about blank spots in required inputs although is
 
 **To Reproduce**
 Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+1. in form page leave any input in blank
+2. Check on 'habilitar segundo painel'
+3. Scroll down and click on 'Apresentar'
+4. in print txtbox see all blank dataspots, and also not be warned by program for that
 
 **Expected behavior**
-A clear and concise description of what you expected to happen.
-
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+that program should show a small and html' s default "required input" message but instead it just subumit the blank data
 
 **Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
-
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
-
-**Additional context**
-Add any other context about the problem here.
+ - OS: windows 10 Pro
+ - Browser [OperaGx. chrome, Ms Edge]
+ - Version [22]
