@@ -107,6 +107,7 @@ header{
   left: 1vw
 }
 .genderlabel{
+  transform: translate(-10%,0%);
   font-family: Óptima, sans-serif; 
   font-weight: 600;
   position: relative;
